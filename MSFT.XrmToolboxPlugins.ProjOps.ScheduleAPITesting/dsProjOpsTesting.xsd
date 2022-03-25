@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsFSMigration" targetNamespace="http://tempuri.org/dsFSMigration.xsd" xmlns:mstns="http://tempuri.org/dsFSMigration.xsd" xmlns="http://tempuri.org/dsFSMigration.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsFSMigration" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsFSMigration" msprop:Generator_UserDSName="dsFSMigration">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtProjects" msprop:Generator_TableClassName="dtProjectsDataTable" msprop:Generator_TableVarName="tabledtProjects" msprop:Generator_TablePropName="dtProjects" msprop:Generator_RowDeletingName="dtProjectsRowDeleting" msprop:Generator_RowChangingName="dtProjectsRowChanging" msprop:Generator_RowEvHandlerName="dtProjectsRowChangeEventHandler" msprop:Generator_RowDeletedName="dtProjectsRowDeleted" msprop:Generator_UserTableName="dtProjects" msprop:Generator_RowChangedName="dtProjectsRowChanged" msprop:Generator_RowEvArgName="dtProjectsRowChangeEvent" msprop:Generator_RowClassName="dtProjectsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="project_id" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_ColumnVarNameInTable="columnproject_id" msprop:Generator_ColumnPropNameInRow="project_id" msprop:Generator_ColumnPropNameInTable="project_idColumn" msprop:Generator_UserColumnName="project_id" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtResourceAssignments" msprop:Generator_TableClassName="dtResourceAssignmentsDataTable" msprop:Generator_TableVarName="tabledtResourceAssignments" msprop:Generator_RowChangedName="dtResourceAssignmentsRowChanged" msprop:Generator_TablePropName="dtResourceAssignments" msprop:Generator_RowDeletingName="dtResourceAssignmentsRowDeleting" msprop:Generator_RowChangingName="dtResourceAssignmentsRowChanging" msprop:Generator_RowEvHandlerName="dtResourceAssignmentsRowChangeEventHandler" msprop:Generator_RowDeletedName="dtResourceAssignmentsRowDeleted" msprop:Generator_RowClassName="dtResourceAssignmentsRow" msprop:Generator_UserTableName="dtResourceAssignments" msprop:Generator_RowEvArgName="dtResourceAssignmentsRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="resourceassignmentid" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnresourceassignmentid" msprop:Generator_ColumnPropNameInRow="resourceassignmentid" msprop:Generator_ColumnPropNameInTable="resourceassignmentidColumn" msprop:Generator_UserColumnName="resourceassignmentid" type="xs:string" />
+              <xs:element name="projecttaskid" msprop:Generator_ColumnVarNameInTable="columnprojecttaskid" msprop:Generator_ColumnPropNameInRow="projecttaskid" msprop:Generator_ColumnPropNameInTable="projecttaskidColumn" msprop:Generator_UserColumnName="projecttaskid" type="xs:string" minOccurs="0" />
+              <xs:element name="bookableresourceid" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_ColumnVarNameInTable="columnbookableresourceid" msprop:Generator_ColumnPropNameInRow="bookableresourceid" msprop:Generator_ColumnPropNameInTable="bookableresourceidColumn" msprop:Generator_UserColumnName="bookableresourceid" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtProjectTasks" msprop:Generator_TableClassName="dtProjectTasksDataTable" msprop:Generator_TableVarName="tabledtProjectTasks" msprop:Generator_TablePropName="dtProjectTasks" msprop:Generator_RowDeletingName="dtProjectTasksRowDeleting" msprop:Generator_RowChangingName="dtProjectTasksRowChanging" msprop:Generator_RowEvHandlerName="dtProjectTasksRowChangeEventHandler" msprop:Generator_RowDeletedName="dtProjectTasksRowDeleted" msprop:Generator_UserTableName="dtProjectTasks" msprop:Generator_RowChangedName="dtProjectTasksRowChanged" msprop:Generator_RowEvArgName="dtProjectTasksRowChangeEvent" msprop:Generator_RowClassName="dtProjectTasksRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="projecttaskid" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_ColumnVarNameInTable="columnprojecttaskid" msprop:Generator_ColumnPropNameInRow="projecttaskid" msprop:Generator_ColumnPropNameInTable="projecttaskidColumn" msprop:Generator_UserColumnName="projecttaskid" type="xs:string" />
+              <xs:element name="projectid" msprop:Generator_ColumnVarNameInTable="columnprojectid" msprop:Generator_ColumnPropNameInRow="projectid" msprop:Generator_ColumnPropNameInTable="projectidColumn" msprop:Generator_UserColumnName="projectid" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:dtProjects" />
+      <xs:field xpath="mstns:project_id" />
+    </xs:unique>
+    <xs:unique name="dtResourceAssignments_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:dtResourceAssignments" />
+      <xs:field xpath="mstns:resourceassignmentid" />
+    </xs:unique>
+    <xs:unique name="dtProjectTasks_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:dtProjectTasks" />
+      <xs:field xpath="mstns:projecttaskid" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
